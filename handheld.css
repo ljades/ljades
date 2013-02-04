@@ -1,0 +1,23 @@
+body {
+	text-align: center;
+	background-color: tan;
+	font-family: Helvetica;
+}
+h2 {
+	font-size: 18px;
+}
+h2.resume {
+	text-decoration: underline;
+}
+p, ul {
+	font-size: 16px;
+}
+p.resume {
+	margin-left: 1%;
+}
+.bio {
+	text-align: center;
+	text-indent: 10%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
