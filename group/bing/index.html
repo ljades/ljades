@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Joey++</title>
+	<link rel="stylesheet" media="screen" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 800px)" href="../bootstrap/css/bootstrap-responsive.min.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script charset="UTF-8" type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script src="../underscore.js"></script>
+	<script src="moduleloader.js"></script>
+	<script src="jroute.js"></script>
+	<script src="jstop.js"></script>
+	<script src="index.js"></script>
+</head>
+
+<body>
+	<div id="fb-root"></div>
+	<script>
+  		window.fbAsyncInit = function() {
+   		// init the FB JS SDK
+    	FB.init({
+      		appId      : '544985125553440',                        // App ID from the app dashboard
+      		channelUrl : 'http://50.63.172.74/joey/bing/channel.html', // Channel file for x-domain comms
+      		status     : true,                                 // Check Facebook Login status
+      		xfbml      : true                                  // Look for social plugins on the page
+    	});
+    	// Additional initialization code such as adding Event Listeners goes here
+	  	};
+	  	// Load the SDK asynchronously
+	  	(function(d, s, id){
+	    	var js, fjs = d.getElementsByTagName(s)[0];
+	     	if (d.getElementById(id)) {return;}
+	     	js = d.createElement(s); js.id = id;
+	     	js.src = "//connect.facebook.net/en_US/all.js";
+	     	fjs.parentNode.insertBefore(js, fjs);
+	   	}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<div class="container-fluid">
+		<!-- Sidebar -->
+		<div class="row-fluid">
+			<div class="span3" id='sidebar'>
+				<!--Sidebar content-->
+
+				<div class="page-header">
+  					<h1>++<div id="plusplus">Joey</div><small></small></h1>
+				</div>
+
+				<!-- tab pagers -->
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#sidebar-route">Route</a></li>
+					<li><a href="#sidebar-about">About</a></li>
+					<li class='pull-right'><button id='createbutton' class='btn btn-primary'>New Stop</button><button id='savebutton' class='btn btn-success'>Save</button></li>
+				</ul>
+
+				<!-- tab content -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="sidebar-route">
+						<ul class='unstyled' id="route-list">
+						</ul>
+					</div>
+					<div class="tab-pane" id="sidebar-about">
+						<p>
+							At Tufts University the Joey is the primary mode of transportation for students from the Medford-Somerville campus to the illustrious Davis Square. Whether traveling into Boston, seeing a movie at the Somerville Theater, or enjoying a fine burrito from Anna's Taqueria, the Joey is the tried and trusted means for travel. Wouldn't it be great to be able to change the Joey route to maximize efficiency for your fellow students? <br>&nbsp;<br> This is <strong> Joey++ </strong> where you can interactively manipulate the Joey route. We challenge you to find a better route--be that faster, more fuel efficient, or based on whatever metric is important to you!<br>&nbsp;<br> Simply drag and drop current Joey stops to experiment with the route. You can also add new stops to the route with the "new stop" button. When you think you have created a worthwhile route, click the save button so you can share it with friends.
+						</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="span9">
+				<!-- Map -->
+				<div id="map" style="position:absolute; width:100%; height:100%">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="facebook_buts" class="fb-like" data-send="true" data-width="450" data-show-faces="true"></div>
+</body>
+</html>
+
+

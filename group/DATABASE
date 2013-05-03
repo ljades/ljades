@@ -1,0 +1,27 @@
+DATABASE
+
+We're using MongoDB in the background. If you git pull the latest version, run 'node server.js' to start it on your local machine.
+It's currently running on port 9898 although that may change.
+
+It depends on MongooseJS, ExpressJS, and the util library.
+
+Schema:
+We define a route, as follows:
+
+{
+	path:[{
+		lat:Number,
+		lon:Number,
+		isStop:Boolean,
+		name:String
+	}],
+	id:Number
+}
+
+The path data field is an array of json objects that correspond to a point in the route. id is the unique id we assign to that route.
+
+Different urls to make requests to:
+
+GET:
+
+50.63.172.74:9898/joey/bing - gets the default route for the joey

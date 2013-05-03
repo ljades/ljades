@@ -1,0 +1,43 @@
+.infowindow, .pushpin {
+	background-color: #FFFFFF;
+	font-size: 15px;
+	height: auto;
+	width: auto;
+}
+
+.hidden {
+	display: none;
+}
+
+.stop-listitem {
+	width: auto;
+	height: 35px;
+}
+
+.name-display {
+	padding-top: 5px;
+	padding-left: 7px;
+}
+
+.center-vert {
+	vertical-align:middle;
+}
+
+.page-header {
+	font-family: "Georgia";
+	color: #417DC1;
+}
+
+#plusplus {
+	color: rgb(96,30,0);
+	font-weight:bold;
+	float:left;
+}
+
+#createbutton{
+	margin-right: 10px;
+}
+
+#facebook_buts{
+	
+}
