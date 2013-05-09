@@ -1,0 +1,7 @@
+{
+	"name":"joeyplusplus",
+	"dependencies":{
+		"express":"x",
+		"mongoose":"x"
+	}
+}
