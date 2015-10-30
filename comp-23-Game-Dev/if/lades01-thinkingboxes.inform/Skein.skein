@@ -1,0 +1,1750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skein rootNode="node-0x25f4190" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>GNOME Inform 7</generator>
+  <activeNode nodeId="node-0x25f4190"/>
+  <item nodeId="node-0x25f4190">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">
+
+
+
+Arbitrary Evaluations
+An Interactive Fiction by Louis Ades
+Release 1 / Serial number 140317 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+
+Testing Chamber
+You find yourself in a room that takes on the appearance of a test chamber. All there is are two doors along the walls, and a small crate lying in the center of the room. On the southern wall, &quot;1:00 AM&quot; is painted to fill up nearly the whole wall. There is silence. Suddenly, you hear over a loudspeaker, &quot;Ah, another test subject! Welcome! You don&apos;t know who I am, but I know everything there is to know about you.&quot; Perhaps we should keep it that way. You&apos;re objective is to get out of here and find me. How will you do that? Well, heheh, I can&apos;t tell you that. But maybe you shouldn&apos;t try to figure it out right now...maybe you should just sit down...and relax...and rest...heheheheh...oh, and just for your reference, it&apos;s currently midnight.&quot; The voice cuts out. Suddenly, you hear the audible sounds of the air ventilation system speeding up outside of the room. A strange yellow-colored gas fills the room. After some time, you feel it fill your lungs, and you cough a bit. You are left alone in the room.
+
+You can see a Challenge Door, a True Door and a crate (closed) here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x25f42f0"/>
+      <child nodeId="node-0x25f4870"/>
+      <child nodeId="node-0x2db5490"/>
+      <child nodeId="node-0x2db5cd0"/>
+      <child nodeId="node-0x2ddba00"/>
+      <child nodeId="node-0x2e10480"/>
+      <child nodeId="node-0x2e10740"/>
+      <child nodeId="node-0x2e10a00"/>
+      <child nodeId="node-0x2e2a050"/>
+      <child nodeId="node-0x2e2a9f0"/>
+      <child nodeId="node-0x2e2acb0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x25f42f0">
+    <command xml:space="preserve">Look</command>
+    <result xml:space="preserve">Testing Chamber
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x25f4450"/>
+    </children>
+  </item>
+  <item nodeId="node-0x25f4450">
+    <command xml:space="preserve">open crate</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x25f45b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x25f45b0">
+    <command xml:space="preserve">crate</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x25f4710"/>
+    </children>
+  </item>
+  <item nodeId="node-0x25f4710">
+    <command xml:space="preserve">Showme</command>
+    <result xml:space="preserve">Testing Chamber - room
+    yourself - person
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x25f4870">
+    <command xml:space="preserve">open crate</command>
+    <result xml:space="preserve">You open the crate, revealing a wooden Challenge Key.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x25f49d0"/>
+      <child nodeId="node-0x25f4b30"/>
+      <child nodeId="node-0x2cfd040"/>
+      <child nodeId="node-0x2cfd1a0"/>
+      <child nodeId="node-0x2cfd720"/>
+      <child nodeId="node-0x2d25330"/>
+      <child nodeId="node-0x2d751f0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x25f49d0">
+    <command xml:space="preserve">showme</command>
+    <result xml:space="preserve">Testing Chamber - room
+    yourself - person
+    crate - open container
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x25f4b30">
+    <command xml:space="preserve">take wooden Challenge Key</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x25f4c90"/>
+    </children>
+  </item>
+  <item nodeId="node-0x25f4c90">
+    <command xml:space="preserve">showme</command>
+    <result xml:space="preserve">Testing Chamber - room
+    yourself - person
+        wooden Challenge Key
+    crate - open container
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x25f4df0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x25f4df0">
+    <command xml:space="preserve">open True Door</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2cfd040">
+    <command xml:space="preserve">rest</command>
+    <result xml:space="preserve">You rest for 10 minutes. The time of day is   now 12:11 am
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2cfd1a0">
+    <command xml:space="preserve">not resting</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2cfd300"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2cfd300">
+    <command xml:space="preserve">rest</command>
+    <result xml:space="preserve">You rest for 10 minutes. The time of day is now 12:11 am
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2cfd460"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2cfd460">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2cfd5c0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2cfd5c0">
+    <command xml:space="preserve">unlock Challenge Door</command>
+    <result xml:space="preserve">(with the wooden Challenge Key)
+You unlock the Challenge Door.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2cfd720">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.
+
+You begin to feel woozy, and your vision blurs for a second, but then you feel normal again.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2cfd880"/>
+      <child nodeId="node-0x2cfd9e0"/>
+      <child nodeId="node-0x2cfdb40"/>
+      <child nodeId="node-0x2cfdca0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2cfd880">
+    <command xml:space="preserve">unlock Challenge Door</command>
+    <result xml:space="preserve">(with the wooden Challenge Key)
+Your health decreased by 1.
+
+You unlock the Challenge Door.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2cfd9e0">
+    <command xml:space="preserve">unlock door</command>
+    <result xml:space="preserve">(with the wooden Challenge Key)
+You unlock the Challenge Door.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2cfdb40">
+    <command xml:space="preserve">rest</command>
+    <result xml:space="preserve">You rest for 10 minutes. The time of day is   now 12:12 am
+A stinging pain hits your throat, and you begin to cough violently.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2cfdca0">
+    <command xml:space="preserve">unlock challenge door</command>
+    <result xml:space="preserve">(with the wooden Challenge Key)
+You unlock the Challenge Door.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2cfde00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2cfde00">
+    <command xml:space="preserve">say &quot;Hi&quot;</command>
+    <result xml:space="preserve">(to yourself)
+There is no reply.
+
+A stinging pain hits your throat, and you begin to cough violently.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d25070"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d25070">
+    <command xml:space="preserve">enter Challenge Door</command>
+    <result xml:space="preserve">(first opening the Challenge Door)
+
+First Riddle Room
+You can see a Challenge Door and Kinder Gardener here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d251d0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d251d0">
+    <command xml:space="preserve">say &quot;Hi&quot;</command>
+    <result xml:space="preserve">(to Kinder Gardener)
+There is no reply.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2d25330">
+    <command xml:space="preserve">unlock challenge door</command>
+    <result xml:space="preserve">What do you want to unlock the Challenge Door with?
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d25490"/>
+      <child nodeId="node-0x2d25750"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d25490">
+    <command xml:space="preserve">challenge key</command>
+    <result xml:space="preserve">(first taking the wooden Challenge Key)
+You unlock the Challenge Door.
+
+You begin to feel woozy, and your vision blurs for a second, but then you feel normal again.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d255f0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d255f0">
+    <command xml:space="preserve">enter challenge door</command>
+    <result xml:space="preserve">(first opening the Challenge Door)
+
+First Riddle Room
+You can see a Challenge Door and Kinder Gardener here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2d25750">
+    <command xml:space="preserve">key</command>
+    <result xml:space="preserve">(first taking the wooden Challenge Key)
+You unlock the Challenge Door.
+
+You begin to feel woozy, and your vision blurs for a second, but then you feel normal again.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d258b0"/>
+      <child nodeId="node-0x2d25a10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d258b0">
+    <command xml:space="preserve">enter Challenge Door</command>
+    <result xml:space="preserve">(first opening the Challenge Door)
+
+First Riddle Room
+You can see a Challenge Door and Kinder Gardener here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2d25a10">
+    <command xml:space="preserve">enter challenge door</command>
+    <result xml:space="preserve">(first opening the Challenge Door)
+
+First Riddle Room
+You can see a First Riddle Door, a Challenge Door, Kinder Gardener, Box #1 (closed), Box #2 (closed), Box #3 (closed), Box #4 (closed) and Box #5 (closed) here.
+
+Once in the First Riddle Room, the strange voice says, &quot;Oh, I&apos;m not sure if I&apos;d like you to take on this challenge--you may hurt yourself, after all. But if you insist, you must know that each room contains a riddle that you&apos;ll need to solve. Solve it, and the door connecting to the next room will unlock. It&apos;s very possible that there is an end to this maze after, possibly, the seventh room. Will it lead you to safety? It looks like you&apos;ll have to find that out yourself. If it were up to me, I wish you&apos;d just sit down...and rest...but regardless, try not to hurt yourself, heheheh.&quot; The loudspeaker cuts out.
+A man stands in the center of the room in a white button-down, khaki pants, and a large name tag with the name written, &quot;Kinder Gardener&quot;. He says as you approach him, &quot;I really wish you wouldn&apos;t try this door, but if you insist, two plus two must equal...&quot;. There are five closed boxes in front of him, each with a button on the top that opens it.
+
+[Your score has just gone up by five points.]
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d25b70"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d25b70">
+    <command xml:space="preserve">open crate #4</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d25cd0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d25cd0">
+    <command xml:space="preserve">open Box #4</command>
+    <result xml:space="preserve">You open Box #4, revealing a First Riddle Key.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d25e30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d25e30">
+    <command xml:space="preserve">take first riddle key</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d4b080"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d4b080">
+    <command xml:space="preserve">unlock first riddle door</command>
+    <result xml:space="preserve">What do you want to unlock the First Riddle Door with?
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d4b1e0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d4b1e0">
+    <command xml:space="preserve">first riddle key</command>
+    <result xml:space="preserve">You unlock the First Riddle Door.
+
+Once again, the gas hasn&apos;t felt that impactful to your health, but your previous symptoms get stronger, and you start to feel hyperthermia.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d4b340"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d4b340">
+    <command xml:space="preserve">enter first riddle door</command>
+    <result xml:space="preserve">(first opening the First Riddle Door)
+
+Second Riddle Room
+You can see a Red Door, a Green Door, a Blue Door, a First Riddle Door, Mindasa Gasho and Wendy Gasho here.
+
+Two women stand side by side in the next room. To the north is a blue door, to the east is a green door, and to the south is a red door (the door you entered through is to the west). Both are dressed identically, in black button-down blouses, white sports jackets and white pants. The woman on the left has blond hair and wears a name tag that says, &quot;Mindasa&quot;. The woman on the right has brown hair and wears a name tag that says, &quot;Wendy.&quot; Other than these differences, both are nearly identical in every way. Both women say, perfectly in unison, &quot;Welcome to the second room! We&apos;re so ecstatic you made it through the first riddle! It was designed for kindergarteners, so we wouldn&apos;t expect any less from you! And don&apos;t worry, this one won&apos;t be nearly as deadly if you fail. Simply FOLLOW OUR INSTRUCTIONS EXACTLY to find out which door to enter through, and you will make it to the next room in this wondrous maze!&quot;
+
+ Mindasa recites, in such monotony that she could be mistaken for an android, &quot;There is a zero percent chance that you&apos;ll want to follow me if your intention is to pass through to what will be the wrong room. But then again, I have been known to lie one hundred percent of the time.&quot; Mindasa then turns her back towards you and walks towards the blue door to the north. She opens it, walks through, and closes it behind her.
+
+ Wendy recites, in an identical tone and voice, &quot;Mindasa is correct, and I will lead you to the right room room. One of these two things I just said is a lie, but this following statement is absolutely true: there is only one correct room.&quot; Wendy then turns her back towards you and walks towards the green door to the east. She opens it, walks through, and closes it behind her.
+
+[Your score has just gone up by five points.]
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d4b4a0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d4b4a0">
+    <command xml:space="preserve">enter red door</command>
+    <result xml:space="preserve">(first opening the Red Door)
+
+Room of Despair
+You can see a Silver Staircase, a White Door, a Red Door and a bed here.
+
+A stinging pain hits your throat, and you begin to cough violently.
+
+You overhear the creepy voice on the loadspeaker say, in his usual calm and overbearing voice, &quot;Congratulations. While your first test may have been straightforward, this one required you to think...outside the box. Now, why don&apos;t you take a break on this nice bed in front of you? I can&apos;t think of any harm in taking a rest in the Room of Despair, after all...heheheh.&quot; The room is lighted to a very strange degree, giving off a creepy tone throughout the room. At the other end of the room is a white door.
+
+[Your score has just gone up by five points.]
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d4b600"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d4b600">
+    <command xml:space="preserve">enter red door</command>
+    <result xml:space="preserve">
+Second Riddle Room
+You can see a Red Door, a Green Door, a Blue Door and a First Riddle Door here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d4b760"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d4b760">
+    <command xml:space="preserve">enter red door</command>
+    <result xml:space="preserve">
+Room of Despair
+You can see a Red Door, a Silver Staircase, a White Door and a bed here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d4b8c0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d4b8c0">
+    <command xml:space="preserve">enter white door</command>
+    <result xml:space="preserve">(first opening the White Door)
+
+Nightmare Room
+You can see a Blood Door and a White Door here.
+
+As you enter the room, labeled by the White Door as the &quot;Nightmare Room,&quot; the fluorescent lights in the room begin to dim, and then suddenly black out. The sound of air pressure filling the air vents begins to sound. You notice as you keep breathing, that there is something in the air of this room. You begin to trip, and stumble. Suddenly, images on the walls begin to shine out of the black. They are writing scribbled in what looks to be blood dripping down to the ground. The writings get filled in and become legible in front of your eyes...&quot;KCABNRUT&quot; is what is written, over and over again on these walls. The words begin to cascade, until all you can see are the walls completely painted in blood, and the words &quot;KCABNRUT&quot; inscribed in gigantic letters, crooked and slanted as they line the ceiling, the only slate not left completely filled. 
+ 
+ Suddenly, two lights turn back on, one in front of a blood red door right in front of you, and another lighting up the white door right behind you.
+
+[Your score has just gone up by five points.]
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d4ba20"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d4ba20">
+    <command xml:space="preserve">enter white door</command>
+    <result xml:space="preserve">
+Room of Despair
+You can see a White Door, a Red Door and a Silver Staircase here.
+
+Your stomach suddenly feels inflamed. This disease is catching up on you. You get sick and stumble to the floor. You pick yourself back up, but you begin to feel yourself weakening.
+
+As you desperately TURN BACK and as the walls instruct, you jolt right back to where you last left off, the Room of Despair. But something is different; the bed has disappeared, and you notice that the Silver Staircase is no longer locked.
+
+[Your score has just gone up by five points.]
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d4bb80"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d4bb80">
+    <command xml:space="preserve">enter silver staircase</command>
+    <result xml:space="preserve">(first opening the Silver Staircase)
+
+Yellow Room
+You can see a Wooden Door and a Silver Staircase here.
+
+You walk up the silver staircase. You enter an empty, yellow room. Nothing is in the room except a plain wooden door at the other end, and the silver staircase you just walked up.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d4bce0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d4bce0">
+    <command xml:space="preserve">enter wooden door</command>
+    <result xml:space="preserve">(first opening the Wooden Door)
+
+Dead End
+You can see a Silver Door and a Wooden Door here.
+
+You walk into the next room. There is nothing in it. There&apos;s a silver door at the other end, but it is locked. White fluorescent light fills the room, almost blinding compared to the much dimmer light in the yellow room. The strange voice comes back on-line. You can hear disgust in his tone as he says, &quot;Hmph, it seems you&apos;ve reached the dead end. That&apos;s a shame--I had hoped you would be able to make it further. And for all the help I tried to *lend* you. Oh well--the next test subject should be here soon. You should be dead from your illness soon enough. Just don&apos;t leave a mess for the next subject.&quot; The voice cuts out. There is a deadening silence in the room.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d4be40"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d4be40">
+    <command xml:space="preserve">enter wooden door</command>
+    <result xml:space="preserve">
+Yellow Room
+You can see a Wooden Door and a Silver Staircase here.
+
+You walk up the silver staircase. You enter an empty, yellow room. Nothing is in the room except a plain wooden door at the other end, and the silver staircase you just walked up.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d75090"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d75090">
+    <command xml:space="preserve">enter wooden door</command>
+    <result xml:space="preserve">
+Dead End
+You can see a Wooden Door and a Silver Door here.
+
+Your vision begins to blur, but this time it doesn&apos;t go away. You can still see ahead of you, but just barely. Your muscles weaken, and every further movement requires limping.
+
+You walk into the next room. There is nothing in it. There&apos;s a silver door at the other end, but it is locked. White fluorescent light fills the room, almost blinding compared to the much dimmer light in the yellow room. The strange voice comes back on-line. You can hear disgust in his tone as he says, &quot;Hmph, it seems you&apos;ve reached the dead end. That&apos;s a shame--I had hoped you would be able to make it further. And for all the help I tried to *lend* you. Oh well--the next test subject should be here soon. You should be dead from your illness soon enough. Just don&apos;t leave a mess for the next subject.&quot; The voice cuts out. There is a deadening silence in the room.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2d751f0">
+    <command xml:space="preserve">unlock door</command>
+    <result xml:space="preserve">Which do you mean, the Challenge Door or the True Door?
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d75350"/>
+      <child nodeId="node-0x2d8e5d0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d75350">
+    <command xml:space="preserve">key</command>
+    <result xml:space="preserve">(first taking the wooden Challenge Key)
+You unlock the Challenge Door.
+
+You begin to feel woozy, and your vision blurs for a second, but then you feel normal again.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d754b0"/>
+      <child nodeId="node-0x2d75610"/>
+      <child nodeId="node-0x2d758d0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d754b0">
+    <command xml:space="preserve">enter Challenge Door</command>
+    <result xml:space="preserve">(first opening the Challenge Door)
+
+First Riddle Room
+You can see a Challenge Door and Kinder Gardener here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2d75610">
+    <command xml:space="preserve">enter challenge door</command>
+    <result xml:space="preserve">(first opening the Challenge Door)
+
+First Riddle Room
+You can see a First Riddle Door, a Challenge Door, Kinder Gardener, Box #1 (closed), Box #2 (closed), Box #3 (closed), Box #4 (closed) and Box #5 (closed) here.
+
+Once in the First Riddle Room, the strange voice says, &quot;Oh, I&apos;m not sure if I&apos;d like you to take on this challenge--you may hurt yourself, after all. But if you insist, you must know that each room contains a riddle that you&apos;ll need to solve. Solve it, and the door connecting to the next room will unlock. It&apos;s very possible that there is an end to this maze after, possibly, the seventh room. Will it lead you to safety? It looks like you&apos;ll have to find that out yourself. If it were up to me, I wish you&apos;d just sit down...and rest...but regardless, try not to hurt yourself, heheheh.&quot; The loudspeaker cuts out.
+A man stands in the center of the room in a white button-down, khaki pants, and a large name tag with the name written, &quot;Kinder Gardener&quot;. He says as you approach him, &quot;I really wish you wouldn&apos;t try this door, but if you insist, two plus two must equal...&quot;. There are five closes crates in front of him.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d75770"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d75770">
+    <command xml:space="preserve">open box #1</command>
+    <result xml:space="preserve">You open Box #1.
+
+A stinging pain hits your throat, and you begin to cough violently.
+
+
+
+    *** You died. ***
+
+
+In that game you scored 0 out of a possible 0, in 4 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2d758d0">
+    <command xml:space="preserve">enter door</command>
+    <result xml:space="preserve">(first opening the Challenge Door)
+
+First Riddle Room
+You can see a First Riddle Door, a Challenge Door, Kinder Gardener, Box #1 (closed), Box #2 (closed), Box #3 (closed), Box #4 (closed) and Box #5 (closed) here.
+
+Once in the First Riddle Room, the strange voice says, &quot;Oh, I&apos;m not sure if I&apos;d like you to take on this challenge--you may hurt yourself, after all. But if you insist, you must know that each room contains a riddle that you&apos;ll need to solve. Solve it, and the door connecting to the next room will unlock. It&apos;s very possible that there is an end to this maze after, possibly, the seventh room. Will it lead you to safety? It looks like you&apos;ll have to find that out yourself. If it were up to me, I wish you&apos;d just sit down...and rest...but regardless, try not to hurt yourself, heheheh.&quot; The loudspeaker cuts out.
+A man stands in the center of the room in a white button-down, khaki pants, and a large name tag with the name written, &quot;Kinder Gardener&quot;. He says as you approach him, &quot;I really wish you wouldn&apos;t try this door, but if you insist, two plus two must equal...&quot;. There are five closed boxes in front of him, each with a button on the top that opens it.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d75a30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d75a30">
+    <command xml:space="preserve">open box #4</command>
+    <result xml:space="preserve">You open Box #4, revealing a First Riddle Key.
+
+A stinging pain hits your throat, and you begin to cough violently.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d75b90"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d75b90">
+    <command xml:space="preserve">unlock First Riddle Door</command>
+    <result xml:space="preserve">(with the wooden Challenge Key)
+That doesn&apos;t seem to fit the lock.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d75cf0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d75cf0">
+    <command xml:space="preserve">take first riddle key</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d75e50"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d75e50">
+    <command xml:space="preserve">unlock First Riddle Door</command>
+    <result xml:space="preserve">What do you want to unlock the First Riddle Door with?
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d8e050"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d8e050">
+    <command xml:space="preserve">first riddle key</command>
+    <result xml:space="preserve">You unlock the First Riddle Door.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d8e1b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d8e1b0">
+    <command xml:space="preserve">enter first riddle door</command>
+    <result xml:space="preserve">(first opening the First Riddle Door)
+
+Second Riddle Room
+You can see a Red Door, a Blue Door, a First Riddle Door, Mindasa Gasho and Wendy Gasho here.
+
+Two women stand side by side in the next room. To the north is a blue door, to the east is a green door, and to the south is a red door (the door you entered through is to the west). Both are dressed identically, in black button-down blouses, white sports jackets and white pants. The woman on the left has blond hair and wears a name tag that says, &quot;Mindasa&quot;. The woman on the right has brown hair and wears a name tag that says, &quot;Wendy.&quot; Other than these differences, both are nearly identical in every way. Both women say, perfectly in unison, &quot;Welcome to the second room! We&apos;re so ecstatic you made it through the first riddle! It was designed for kindergarteners, so we wouldn&apos;t expect any less from you! And don&apos;t worry, this one won&apos;t be nearly as deadly if you fail. Simply FOLLOW OUR INSTRUCTIONS EXACTLY to find out which door to enter through, and you will make it to the next room in this wondrous maze!&quot;
+Mindasa recites, in such monotony that she could be mistaken for an android, &quot;There is a zero percent chance that you&apos;ll want to follow me if your intention is to pass through to what will be the wrong room. But then again, I have been known to lie one hundred percent of the time.&quot; Mindasa then turns her back towards you and walks towards the blue door to the north. She opens it, walks through, and closes it behind her.
+Wendy recites, in an identical tone and voice, &quot;Mindasa is correct, and I will lead you to the right room room. One of these two things I just said is a lie, but this following statement is absolutely true: there is only one correct room.&quot; Wendy then turns her back towards you and walks towards the green door to the east. She opens it, walks through, and closes it behind her.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d8e310"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d8e310">
+    <command xml:space="preserve">enter red door</command>
+    <result xml:space="preserve">(first opening the Red Door)
+
+Room of Despair
+You can see a Red Door here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d8e470"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d8e470">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">But you aren&apos;t in anything at the moment.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2d8e5d0">
+    <command xml:space="preserve">challenge door</command>
+    <result xml:space="preserve">What do you want to unlock the Challenge Door with?
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d8e730"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d8e730">
+    <command xml:space="preserve">key</command>
+    <result xml:space="preserve">(first taking the wooden Challenge Key)
+You unlock the Challenge Door.
+
+You begin to feel woozy, and your vision blurs for a second, but then you feel normal again.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d8e890"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d8e890">
+    <command xml:space="preserve">enter door</command>
+    <result xml:space="preserve">Which do you mean, the Challenge Door or the True Door?
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d8e9f0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d8e9f0">
+    <command xml:space="preserve">challenge door</command>
+    <result xml:space="preserve">(first opening the Challenge Door)
+
+First Riddle Room
+You can see a First Riddle Door, a Challenge Door, Kinder Gardener, Box #1 (closed), Box #2 (closed), Box #3 (closed), Box #4 (closed) and Box #5 (closed) here.
+
+Once in the First Riddle Room, the strange voice says, &quot;Oh, I&apos;m not sure if I&apos;d like you to take on this challenge--you may hurt yourself, after all. But if you insist, you must know that each room contains a riddle that you&apos;ll need to solve. Solve it, and the door connecting to the next room will unlock. It&apos;s very possible that there is an end to this maze after, possibly, the seventh room. Will it lead you to safety? It looks like you&apos;ll have to find that out yourself. If it were up to me, I wish you&apos;d just sit down...and rest...but regardless, try not to hurt yourself, heheheh.&quot; The loudspeaker cuts out.
+A man stands in the center of the room in a white button-down, khaki pants, and a large name tag with the name written, &quot;Kinder Gardener&quot;. He says as you approach him, &quot;I really wish you wouldn&apos;t try this door, but if you insist, two plus two must equal...&quot;. There are five closed boxes in front of him, each with a button on the top that opens it.
+
+[Your score has just gone up by five points.]
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d8eb50"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d8eb50">
+    <command xml:space="preserve">open box #4</command>
+    <result xml:space="preserve">You open Box #4, revealing a First Riddle Key.
+
+Once again, the gas hasn&apos;t felt that impactful to your health, but your previous symptoms get stronger, and you start to sweat uncontrollably as hyperthermia takes over.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d8ecb0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d8ecb0">
+    <command xml:space="preserve">take first riddle key</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2d8ee10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2d8ee10">
+    <command xml:space="preserve">unlock first riddle door</command>
+    <result xml:space="preserve">What do you want to unlock the First Riddle Door with?
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2db5070"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2db5070">
+    <command xml:space="preserve">first riddle key</command>
+    <result xml:space="preserve">You unlock the First Riddle Door.
+
+A stinging pain hits your throat, and you begin to cough violently.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2db51d0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2db51d0">
+    <command xml:space="preserve">enter First riddle door</command>
+    <result xml:space="preserve">(first opening the First Riddle Door)
+
+Second Riddle Room
+You can see a Red Door, a Green Door, a Blue Door, a First Riddle Door, Mindasa Gasho and Wendy Gasho here.
+
+Two women stand side by side in the next room. To the north is a blue door, to the east is a green door, and to the south is a red door (the door you entered through is to the west). Both are dressed identically, in black button-down blouses, white sports jackets and white pants. The woman on the left has blond hair and wears a name tag that says, &quot;Mindasa&quot;. The woman on the right has brown hair and wears a name tag that says, &quot;Wendy.&quot; Other than these differences, both are nearly identical in every way. Both women say, perfectly in unison, &quot;Welcome to the second room! We&apos;re so ecstatic you made it through the first riddle! It was designed for kindergarteners, so we wouldn&apos;t expect any less from you! And don&apos;t worry, this one won&apos;t be nearly as deadly if you fail. Simply FOLLOW OUR INSTRUCTIONS EXACTLY to find out which door to enter through, and you will make it to the next room in this wondrous maze!&quot;
+
+ Mindasa recites, in such monotony that she could be mistaken for an android, &quot;There is a zero percent chance that you&apos;ll want to follow me if your intention is to pass through to what will be the wrong room. But then again, I have been known to lie one hundred percent of the time.&quot; Mindasa then turns her back towards you and walks towards the blue door to the north. She opens it, walks through, and closes it behind her.
+
+ Wendy recites, in an identical tone and voice, &quot;Mindasa is correct, and I will lead you to the right room room. One of these two things I just said is a lie, but this following statement is absolutely true: there is only one correct room.&quot; Wendy then turns her back towards you and walks towards the green door to the east. She opens it, walks through, and closes it behind her.
+
+[Your score has just gone up by five points.]
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2db5330"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2db5330">
+    <command xml:space="preserve">enter blue door</command>
+    <result xml:space="preserve">(first opening the Blue Door)
+
+First Wrong Room
+You can see a Blue Door and Mindasa Gasho here.
+
+Mindasa says, in an almost gleeful tone, &quot;Oh! I&apos;m sorry! It seems you guessed...wrong...&quot; Suddenly her eyes glow red. Your eyes start to blur, and you begin to feel dizzy. You can overhear her continue as your vision fades, &quot;But, I&apos;m feeling a bit merciful today! I won&apos;t kill you today! But try to return to the Second Riddle Room, and guess right this time!&quot; You awaken moments later, back in your previous condition, in the Testing Chamber.
+
+Testing Chamber
+You find yourself in a room that takes on the appearance of a test chamber. All there is are two doors along the walls, and a small crate lying in the center of the room. On the southern wall, &quot;1:00 AM&quot; is painted to fill up nearly the whole wall. There is silence. Suddenly, you hear over a loudspeaker, &quot;Ah, another test subject! Welcome! You don&apos;t know who I am, but I know everything there is to know about you.&quot; Perhaps we should keep it that way. You&apos;re objective is to get out of here and find me. How will you do that? Well, heheh, I can&apos;t tell you that. But maybe you shouldn&apos;t try to figure it out right now...maybe you should just sit down...and relax...and rest...heheheheh...oh, and just for your reference, it&apos;s currently midnight.&quot; The voice cuts out. Suddenly, you hear the audible sounds of the air ventilation system speeding up outside of the room. A strange yellow-colored gas fills the room. After some time, you feel it fill your lungs, and you cough a bit. You are left alone in the room.
+
+You can see a Challenge Door, a True Door and a crate (empty) here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2db5490">
+    <command xml:space="preserve">showme</command>
+    <result xml:space="preserve">Testing Chamber - room
+    Challenge Door - locked door
+    yourself - person
+    crate - closed container
+        *wooden Challenge Key
+* denotes things which are not in scope
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2db55f0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2db55f0">
+    <command xml:space="preserve">open crate</command>
+    <result xml:space="preserve">You open the crate, revealing a wooden Challenge Key.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2db5750"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2db5750">
+    <command xml:space="preserve">unlock Challenge Door</command>
+    <result xml:space="preserve">What do you want to unlock the Challenge Door with?
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2db58b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2db58b0">
+    <command xml:space="preserve">key</command>
+    <result xml:space="preserve">(first taking the wooden Challenge Key)
+You unlock the Challenge Door.
+
+You begin to feel woozy, and your vision blurs for a second, but then you feel normal again.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2db5a10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2db5a10">
+    <command xml:space="preserve">enter challenge door</command>
+    <result xml:space="preserve">(first opening the Challenge Door)
+
+First Riddle Room
+You can see a Challenge Door and Kinder Gardener here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2db5b70"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2db5b70">
+    <command xml:space="preserve">say &quot;Hi&quot;</command>
+    <result xml:space="preserve">(to Kinder Gardener)
+There is no reply.
+
+A stinging pain hits your throat, and you begin to cough violently.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2db5cd0">
+    <command xml:space="preserve">open True Door</command>
+    <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2db5e30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2db5e30">
+    <command xml:space="preserve">open crate</command>
+    <result xml:space="preserve">You open the crate, revealing a wooden Challenge Key.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ddb060"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ddb060">
+    <command xml:space="preserve">take wooden Challenge key</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ddb1c0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ddb1c0">
+    <command xml:space="preserve">open True Door</command>
+    <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ddb320"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ddb320">
+    <command xml:space="preserve">unlock True Door</command>
+    <result xml:space="preserve">(with the wooden Challenge Key)
+You unlock the True Door.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ddb480"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ddb480">
+    <command xml:space="preserve">showme</command>
+    <result xml:space="preserve">Testing Chamber - room
+    True Door - closed door
+    yourself - person
+        wooden Challenge Key
+    crate - open container
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ddb5e0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ddb5e0">
+    <command xml:space="preserve">open True Door</command>
+    <result xml:space="preserve">You open the True Door.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ddb740"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ddb740">
+    <command xml:space="preserve">showme</command>
+    <result xml:space="preserve">Testing Chamber - room
+    True Door - open door
+    yourself - person
+        wooden Challenge Key
+    crate - open container
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ddb8a0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ddb8a0">
+    <command xml:space="preserve">enter True Door</command>
+    <result xml:space="preserve">
+Winning Room
+You can see a True Door here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2ddba00">
+    <command xml:space="preserve">rest</command>
+    <result xml:space="preserve">You rest for 20 minutes. The time of day is now 12:20 am. 
+ 
+ The strange voice exclaims, &quot;Ah, so you&apos;ve decided to take my advice...heheheh. But perhaps you should continue on your way? That illness of yours isn&apos;t waiting on you to kill you...or is it?&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ddbb60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ddbb60">
+    <command xml:space="preserve">rest</command>
+    <result xml:space="preserve">You rest for 20 minutes. The time of day is now 12:41 am. 
+ 
+ The strange voice exclaims, &quot;Ah, so you&apos;ve decided to take my advice...heheheh. But perhaps you should continue on your way? That illness of yours isn&apos;t waiting on you to kill you...or is it?&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ddbcc0"/>
+      <child nodeId="node-0x2e101c0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ddbcc0">
+    <command xml:space="preserve">open crate</command>
+    <result xml:space="preserve">You open the crate, revealing a wooden Challenge Key.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2ddbe20"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2ddbe20">
+    <command xml:space="preserve">time of day</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e10060"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e10060">
+    <command xml:space="preserve">rest</command>
+    <result xml:space="preserve">You rest for 20 minutes. The time of day is now 10:03 am
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2e101c0">
+    <command xml:space="preserve">rest</command>
+    <result xml:space="preserve">You rest for 20 minutes. The time of day is now 1:02 am. 
+ 
+ The strange voice exclaims, &quot;Ah, so you&apos;ve decided to take my advice...heheheh. But perhaps you should continue on your way? That illness of yours isn&apos;t waiting on you to kill you...or is it?&quot;
+
+You hear gears turn. There is metal churning, string clinks and clanks to be heard. All debilitations your sickness has caused suddenly go away. The voice returns to the loudspeakers: &quot;Well done, sir! It seems that we have another test subject that has passed and not, well, dropped dead! Why don&apos;t you come meet me in the Winning Room? You&apos;ll find that both the Silver Door and the True Door are now opened for you.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e10320"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e10320">
+    <command xml:space="preserve">enter True Door</command>
+    <result xml:space="preserve">(first opening the True Door)
+
+Winning Room
+You can see a Silver Door and a True Door here.
+
+
+
+    *** As you enter this mysterious final room, you see a man of great bulk in a black suit standing in the center of the room. He wears a big smile, and in both hands he holds two peculiar documents. &quot;Congratulations, young lad! Here&apos;s your diploma! Now walk out the exit behind me so you can get out there and tackle the real world!&quot; Enraged that you just realized that this was meant to be a sadistic way of teaching you about thinking outside the box and following specific instructions no matter how peculiar they seem, yet powerless to do anything because you realize that you have no real sway over what just happened, you resign yourself and trudge out the back door. Congratulations, you just passed some arbitrary tests to prove your worth to a bunch of people who didn&apos;t care about you in the long run! Are you happy with yourself? ***
+
+
+In that game you scored 100 out of a possible 100, in 4 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2e10480">
+    <command xml:space="preserve">rst</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e105e0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e105e0">
+    <command xml:space="preserve">rest</command>
+    <result xml:space="preserve">You rest for 20 minutes. The time of day is now 12:20 am
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2e10740">
+    <command xml:space="preserve">open Challenge Door</command>
+    <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e108a0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e108a0">
+    <command xml:space="preserve">open crate</command>
+    <result xml:space="preserve">You open the crate, revealing a wooden Challenge Key.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2e10a00">
+    <command xml:space="preserve">open challenge door</command>
+    <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e10b60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e10b60">
+    <command xml:space="preserve">open crate</command>
+    <result xml:space="preserve">You open the crate, revealing a wooden Challenge Key.
+
+You begin to feel woozy, and your vision blurs for a second, but then you feel normal again.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e10cc0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e10cc0">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e10e20"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e10e20">
+    <command xml:space="preserve">unlock challenge door</command>
+    <result xml:space="preserve">(with the wooden Challenge Key)
+You unlock the Challenge Door.
+
+A stinging pain hits your throat, and you begin to cough violently.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2e2a050">
+    <command xml:space="preserve">shoeme</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2a1b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2a1b0">
+    <command xml:space="preserve">showme</command>
+    <result xml:space="preserve">Testing Chamber - room
+    Challenge Door - locked door
+    yourself - person
+    crate - closed container
+        *wooden Challenge Key
+* denotes things which are not in scope
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2a310"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2a310">
+    <command xml:space="preserve">open crate</command>
+    <result xml:space="preserve">You open the crate, revealing a wooden Challenge Key.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2a470"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2a470">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.
+
+You begin to feel woozy, and your vision blurs for a second, but then you feel normal again.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2a5d0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2a5d0">
+    <command xml:space="preserve">unlock door</command>
+    <result xml:space="preserve">(with the wooden Challenge Key)
+You unlock the Challenge Door.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2a730"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2a730">
+    <command xml:space="preserve">enter Challenge Door</command>
+    <result xml:space="preserve">(first opening the Challenge Door)
+
+First Riddle Room
+You can see a First Riddle Door, a Challenge Door, Kinder Gardener, Box #1 (closed), Box #2 (closed), Box #3 (closed), Box #4 (closed) and Box #5 (closed) here.
+
+A stinging pain hits your throat, and you begin to cough violently.
+
+Once in the First Riddle Room, the strange voice says, &quot;Oh, I&apos;m not sure if I&apos;d like you to take on this challenge--you may hurt yourself, after all. But if you insist, you must know that each room contains a riddle that you&apos;ll need to solve. Solve it, and the door connecting to the next room will unlock. It&apos;s very possible that there is an end to this maze after, possibly, the seventh room. Will it lead you to safety? It looks like you&apos;ll have to find that out yourself. If it were up to me, I wish you&apos;d just sit down...and rest...but regardless, try not to hurt yourself, heheheh.&quot; The loudspeaker cuts out.
+A man stands in the center of the room in a white button-down, khaki pants, and a large name tag with the name written, &quot;Kinder Gardener&quot;. He says as you approach him, &quot;I really wish you wouldn&apos;t try this door, but if you insist, two plus two must equal...&quot;. There are five closes crates in front of him.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2a890"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2a890">
+    <command xml:space="preserve">open Box #1</command>
+    <result xml:space="preserve">You open Box #1.
+
+Once in the First Riddle Room, the strange voice says, &quot;Oh, I&apos;m not sure if I&apos;d like you to take on this challenge--you may hurt yourself, after all. But if you insist, you must know that each room contains a riddle that you&apos;ll need to solve. Solve it, and the door connecting to the next room will unlock. It&apos;s very possible that there is an end to this maze after, possibly, the seventh room. Will it lead you to safety? It looks like you&apos;ll have to find that out yourself. If it were up to me, I wish you&apos;d just sit down...and rest...but regardless, try not to hurt yourself, heheheh.&quot; The loudspeaker cuts out.
+A man stands in the center of the room in a white button-down, khaki pants, and a large name tag with the name written, &quot;Kinder Gardener&quot;. He says as you approach him, &quot;I really wish you wouldn&apos;t try this door, but if you insist, two plus two must equal...&quot;. There are five closes crates in front of him.
+
+
+
+    *** You died. ***
+
+
+In that game you scored 0 out of a possible 0, in 5 turns.
+
+
+Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
+&gt; </result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2e2a9f0">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">But you aren&apos;t in anything at the moment.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2ab50"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2ab50">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">But you aren&apos;t in anything at the moment.
+
+You begin to feel woozy, and your vision blurs for a second, but then you feel normal again.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2e2acb0">
+    <command xml:space="preserve">f</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2e2ae10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2e2ae10">
+    <command xml:space="preserve">run</command>
+    <result xml:space="preserve">You&apos;ll have to say which compass direction to go in.
+
+You find yourself in a room that takes on the appearance of a test chamber. All there is are two doors along the walls, and a small crate lying in the center of the room. There is silence. Suddenly, you hear over a loudspeaker, &quot;Ah, another test subject! Welcome! You don&apos;t know who I am, but I know everything there is to know about you.&quot; Perhaps we should keep it that way. You&apos;re objective is to get out of here and find me. How will you do that? Well, heheh, I can&apos;t tell you that. But maybe you shouldn&apos;t try to figure it out right now...maybe you should just sit down...and relax...and rest...heheheheh...&quot; The voice cuts out. Suddenly, you hear the audible sounds of the air ventilation system speeding up outside of the room. A strange yellow-colored gas fills the room. After some time, you feel it fill your lungs, and you cough a bit. You are left alone in the room.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+</Skein>

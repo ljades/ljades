@@ -1,0 +1,64 @@
+<scenefile>
+    <globaldata>
+      <diffusecoeff v="0.2"/>
+      <specularcoeff v="0.5"/>
+      <ambientcoeff v="0.5"/>
+	  <transparentcoeff v="1"/>
+    </globaldata>
+
+    <cameradata>
+      <pos x="0" y="0" z="3"/>
+      <focus x="0" y="0" z="0"/>
+      <up x="0" y="1" z="0"/>
+      <heightangle v="45"/>
+    </cameradata>
+
+	<lightdata>
+		<id v="0"/>
+		<color r="1" g="1" b="1"/>
+		<position x="0" y="0" z="3"/>
+	</lightdata>
+  
+	<object type="tree" name="root">
+		<transblock>
+          <scale x="12" y="12" z="3"/>
+          <object type="primitive" name="cube" >
+            <diffuse r="0" g="0" b="0"/>
+            <ambient r="0.15" g="0.15" b="0.15"/>
+            <reflective r="0.4" g="0.4" b="0.4"/>
+            <specular r="0" g="0" b="0"/>
+			<transparent r="0.7" g="0.7" b="0.7"/>
+            <shininess val="5"/>
+          </object>
+		</transblock>
+		<transblock>
+          <scale x="12" y="12" z="5"/>
+          <object type="primitive" name="cube" >
+            <diffuse r="0" g="0" b="0"/>
+            <ambient r="0.35" g="0.35" b="0.35"/>
+            <reflective r="0.1" g="0.1" b="0.1"/>
+            <specular r="0" g="0" b="0"/>
+			<transparent r=".6" g=".6" b=".7"/>
+            <shininess val="5"/>
+          </object>
+		</transblock>
+	</object>
+	<object type="tree" name="bolt">
+	  <transblock>
+		  <translate x="0" y="0" z="0"/>
+		  <scale x=".20" y="1" z=".20"/>
+		  <object type="tree">
+			<transblock>
+				<rotate x="0" y="0" z="1" angle="180"/>
+				<object type="primitive" name="cylinder" >
+				  <diffuse r="1.5" g="1.1" b="1.5"/>
+				  <ambient r="0" g="0" b="0"/>
+				  <reflective r="1" g="1" b="1"/>
+				  <specular r="0" g="0" b="0"/>
+				  <shininess val="2"/>
+				</object>
+			</transblock>
+		  </object>
+	  </transblock>	
+	</object>
+</scenefile>

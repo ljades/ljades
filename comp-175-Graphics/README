@@ -1,0 +1,7 @@
+COMP175 -Graphics Programming
+
+Currently, this repository only contains one directory, containing my
+final project for the class, which was utlizing a recursive ray tracer
+to build a model for lightning simulation. The project was also slightly
+expanded upon to include another model for continuously branching off
+metalic spheres that would continuously split off.
