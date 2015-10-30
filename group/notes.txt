@@ -1,3 +1,0 @@
-Things to keep in mind/Problems to solve later:
-
-1) Changing the direction of the route: ex. clockwise vs counter clockwise.

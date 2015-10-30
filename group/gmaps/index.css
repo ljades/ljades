@@ -1,8 +1,0 @@
-html { height: 100% }
-body { height: 100%; margin: 0px; padding: 0px }
-#mapcanvas { height: 100% }
-
-.poiinfowindow {
-	font-size: 10px;
-	height: 10px;
-}
