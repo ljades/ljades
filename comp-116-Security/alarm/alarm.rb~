@@ -1,0 +1,19 @@
+require 'packetfu'
+
+if (ARGV.length == 0)
+    cap = PacketFu::Capture.new(:start => true, :iface => 'eth0', :promisc => true)
+    #stream.show_live()
+    numIncident = 0
+    cap.stream.each do |p|
+      pkt = PacketFu::Packet.parse p
+      if pkt.is_ip?
+        next if pkt.ip_saddr == Utils.ifconfig[:ip_saddr]
+        #packet_info = [pkt.ip_saddr, pkt.ip_daddr, pkt.size, pkt.proto.last]
+        if (pkt.ip_flags.urg == 1 && pkt.ip_flags.fin == 1 && pkt.ip_flags.psh == 1)
+          puts numIncident + ". ALERT: Xmas scan is detected from " + pkt.ip_saddr + " (" + pkt.proto.last + " (" + pkt.payload + ")!"
+        elseif (pkt.ip_flags.urg == 0 && pkt.ip_flags.fin == 0 && pkt.ip_flags.psh == 0 && pkt.ip_flags.ack == 0 && pkt.ip_flags.rst == 0 && pkt.ip_flags.syn == 0)
+          puts "Hi"
+          end
+        end
+      end
+end
