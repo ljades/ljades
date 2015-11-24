@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Security Report</title>
+</head>
+
+<body>
+<p>Introduction: I was hired to make a security assessment of Kelly's Scorecenter,
+which he linked to his games including Frogger.</p> <br/>
+<p>Methodology: None of the tools recommended really worked. I couldn't figure them
+out, whether by RTFM or by their interfaces--OWASP WebScarab seemed too much a pain
+to install, Paros didn't show all the tools or options that the documentation
+indicated, and Burp Suite seemed like it worked, but there was already another
+inherent issue in my partner's webpage, which I will get to in a moment.</p>
+	<p>I first looked at the design of all of his sites, made assumptions about
+		what I could break, and then checked his source code to confirm my
+		suspicions, and even find new ways. I curled data and attempted to send
+		some through through my Frogger game. However, there were a few issues:
+		my Frogger game's submissions were not taken as they should've been. Neither
+		were Burp Suite's. They just appeared as null everything on the root page.
+		Also, my partner didn't have a conversion of strings to ints with scores,
+		so submitting in most cases didn't work if we wanted that score to appear on
+		highscores.json (because it sorts by larger integer values). Just a few problems
+		that appeared, some of my tests are hypothetical by looking at the pages and source code--not all of it was tested successfully because of these issues.</p>
+<br/>
+<p>Abstract of findings: The way that my partner arranged his columns had a security flaw--he did not
+	restrict column size on his root size, but rather had them judged, as by default,
+	by how big the element is. This meant that I was able to submit an extremely
+	long username as a body variable and that made it extremely hard to read scores
+	and other information, and really screwed up the interface. Another issue his
+	app had is that when doing a usersearch, you would type in the name, then it
+	would bring you to another site with that name filtered. However, in the header of
+	this site, it would have something like "Scores listed for [username]". Since 
+	the form for entering a username wasn't filtered, I could write a script for
+	something that could break the page for anyone else to come, and then mess up the collection.
+	I could also do this by submitting something with any username, then have this
+	script put in the game_title variable. Then, this would show up on the root of the
+	website, and perhaps even under a typically searched username. You could have the
+	website simply redirect to some quite atrocious website by certain event listeners
+	(onclick, keydown for certain things like spacebar or even backspace). Lastly,
+	because this app doesn't restrict which websites can submit data, I could theoretically
+	curl data saying that I got the highest score of anybody else in frogger just by
+	submitting a ridiculously high score. There's no permitted games--everything works.</p>		
+
+<h3>Issues Found</h3>
+<p>
+	Column Manipulation
+</p>	
+<ul>
+	<li> Bad programming practice
+	<li> Root "/*" page
+	<li> Low - It doesn't break the site beyond repair, but it does make it pretty inconvenient
+			to see the database of all scores. It meddles with what is at first a pretty nice interface.
+	<li> I found it simply by looking at the nature of his columns and seeing that the page source uses standard
+		tr's and td's. To not specify lengths or anything is bad programming practice here.
+	<li>The best way to solve this issue is that in submit.json, once you have the body elements, you can treat
+		you can copy only the first x letters of the username and game_title strings. You can iterate a forloop only to
+		copy over the first letters of a certain length, and then insert THOSE strings into the collection. Limiting it keeps
+		the columns in order.
+</ul>
+<p>
+	Usersearch issue
+</p>
+<ul>
+	<li>Injection
+	<li>"/usersearch" page, "/search.json"
+	<li>Low/Medium/High - Putting custom scripts into the page from this part of the site can only affect the site in a minor
+		way for a low-level programmer, and it would only affect this one time. However, in the hands of a skilled hacker,
+		knowing what database and what functions are used by the app, he can script something really deadly and can
+		cause a SQL injection of some sort, maybe even deleting other collection contents.
+	<li>As mentioned in the abstract, whatever username is typed in the form will be reprinted on the next page.
+		As in, if you put a script there, that script will be executed on the next page. This script can be really harmful.
+		Even more so, if the person who owns the web app would simply limit the username length or filter out tags (creating a new string and looking at it letter for letter, checking each one and only putting in the new string those that are permitted),
+		there's a second weakness--this page simply redirects to another GET request, search.json (something I saw after looking at the source code). Having this as a GET request
+		reachable by ANYBODY is really bad, because this GET request simply works with a query for the username...if usersearch is
+		filtered, this one can still be meddled with.
+	<li>In addition to filtering out what can be searched, as mentioned, by limiting the length and the characters that can be put in,
+		like tags and scripts etc., the /search.json page needs to be changed to a POST request, so that it can only be
+		accessed in a standard browser through /usersearch. Also, '/search.json would also have to filter out its queries to make sure
+		no bad scripts are put in the response.send.
+</ul>
+<p>
+	submit.json's injection issue
+</p>
+<ul>
+	<li>Injection
+	<li>"/submit.json" page
+	<li>Medium - Everything in this issue is similar to what you'd find in the usersearch issue--if a bad username is submitted to the collection
+		(it contains a script or obstructive markup), it can screw up the whole root page, where everyone's names are unconditionally listed.
+	<li>Just as with the usersearch issue, this is a fatal security flaw that can lead to bad meddling with the site. However, this injection is worse--
+		these submits will appear permanently in the site, no matter how skilled the hacker is at writing malicious scripts. It's really easy to write one small thing,
+		because these submissions are permanent unless the scorecenter is cleared.
+	<li>Just as with the usersearch issue, every body element must be filtered to get rid of the malicious scripts that can be inside. This way,
+		nothing that can harm the page can be returned on the HTML page.
+</ul>
+<p>
+	Cross-site origins and scripting
+</p>
+<ul>
+	<li>XSS
+	<li>"/submit.json:
+	<li>High - This is perhaps one of the biggest issues aside from usersearch's. Allowing just any site or user to access the app's POST functions
+		directly is extremely harmful.
+	<li>What can you do with the power of cross-site scripting? You can repeatedly post obnoxious scores to the database (or even just null ones) to
+		fill up the page with garbage. I figured this one out when I discovered that my partner's POST functionality is screwed up unless you do it through curl. I would repeatedly POST data
+		and none of it would show up except as nulls as the scores, game_titles, and usernames. It would be a chore to scroll down to the ACTUAL scores.
+		You can send scripts as body elements (though this problem could be stopped with resolutions mentioned above).
+		You can even "hijack" the charts by giving yourself an incredibly high score under your name, and submit it to the app. And cheating at frogger,
+		as we all know, is the biggest crime of all! Long story short, cross-site scripting may be the root of most issues you have, because it opens the doors
+		to a ton of these attacks, along with previously mentioned ones (except for usersearch, which is handled through a form and then a GET request).
+	<li>There's an easy fix to this: create registered sites. Have people request that their game is secured and that they should have access to the scorecenter.
+		Remove this: response.header("Access-Control-Allow-Origin", "*") <br/>
+		response.header("Access-Control-Allow-Headers", "X-Requested-With") <br/>
+		...and change them with similar ones, but instead of the "*", you need specific sites, not just allowing it to everyone. This may take the most effort,
+		because it doesn't involve a quick fix, but it's what would lead to a much more secure program.
+</ul>	
+<p>
+	Posting Scores
+</p>
+<ul>
+	<li>Bad programming practice
+	<li>"/submit.json"
+	<li>Low - It makes certain methods of posting scores ineffectual but it won't break the site. Also, it doesn't ruin all posting methods.
+	<li>In /submit.json POST method, there is no filter for the scores. By this I mean is that if
+		a program can only /submit.json with string elements, such as curling, the program will receive a number
+		score as a string. This means that making it show up in the highscores will be weird, and that score may not even be sorted in the top 10, despite how high up it is.
+		On all other pages, it may not be sorted correctly either, though it will still show up.
+	<li>There's an easy resolution to this: whereever you access request.body.score, access it as parseInt(request.body.score). This immediately solves the poor practice.
+</ul>
+<p>
+	IN conclusion, security issues can create huge issues and breaches in the program that can completely break what leigitimate users are given access to. Injections are the most fatal,
+	yet involve a simple filtration system to fix. Cross-site scripting is the most risky, and creating a registered list of games and their domains is the most recommended
+	long-term fix, though this means that the scorecenter is less open. Creating a more refined format for presenting the scores also becomes very important--having the columns
+	on the root page so free-form is not the best way to approach formatting a nice interface. Pay attention to security, and plug up all goddamn holes.
+</p>
+</body>
+
+
+</html>
