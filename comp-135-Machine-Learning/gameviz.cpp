@@ -10,6 +10,7 @@ GameViz::~GameViz() {
 
 }
 
+// Get a string from a point status (point to string)
 string ptos(GamePoint point) {
 	if (point.getControl() == WHITE) {
 		return to_string(point.getNumCheckers()) + "w";
@@ -20,7 +21,6 @@ string ptos(GamePoint point) {
 	return "  ";
 }
 
-//TODO finish visualization of game board
 //TODO fix for more than 10 checkers on a point
 void GameViz::printBoard(GamePoint *points, int whiteBar, int blackBar, int whiteHome, int blackHome) {
 	cout << "____________________________________________________\n";

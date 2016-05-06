@@ -1,3 +1,7 @@
+// Louis Ades
+// gamepoint.h
+// Purpose: Control behavior of a single point on a backgammon board
+
 #pragma once
 
 #ifndef GAMEPOINT_H

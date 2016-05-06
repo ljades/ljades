@@ -3,8 +3,8 @@
 using namespace std;
 
 GameControl::GameControl(int player1Type, int player2Type, char *inputA, char *inputB, bool viz) {
-	wPlayer = Player(WHITE, player1Type, SEMIOPTIMAL, inputA);
-	bPlayer = Player(BLACK, player2Type, SEMIOPTIMAL, inputB);
+	wPlayer = Player(WHITE, player1Type, EXPERIMENTAL, inputA);
+	bPlayer = Player(BLACK, player2Type, EXPERIMENTAL, inputB);
 	board = new GameBoard;
 	pastBoards = NULL;
 	isViz = viz;
@@ -69,12 +69,13 @@ int GameControl::startGame() {
 		else {
 			movesLeft = 2;
 		}
-
+		// Player makes his moves until there are none left
 		while (movesLeft) {
 			if (isViz) {
 				board->printBoard();
 				cout << "Rolls remaining: ";
 			}
+			// Skip the turn if there are no more moves to make with the current roll.
 			isMovePossible = false;
 			for (i = 0; i < MAX_NUM_ROLLS; i++) {
 				if (playerRolls[i]) {

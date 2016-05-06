@@ -1,3 +1,8 @@
+// Louis Ades
+// gameboard.h
+// Purpose: control state of a game board for backgammon. Includes
+//			move validation and retrieving lists of all possible moves.
+
 #pragma once
 #ifndef GAMEBOARD_H
 #define GAMEBOARD_H

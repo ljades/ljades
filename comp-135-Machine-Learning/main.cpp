@@ -1,3 +1,8 @@
+// Louis Ades
+// main.cpp
+// Purpose: Control backgammon gameplay and large-scale AI testing
+// Note: It's in shambles right now as I accrued some technical debt creating test cases on the fly
+
 #include "gamecontrol.h"
 #include <fstream>
 
@@ -40,7 +45,7 @@ int main() {
 		mControl.startGame();
 	}
 	cout << "B500 Completed\n";
-	*/
+	
 	int whiteTally = 0;
 	int blackTally = 0;
 	
@@ -122,7 +127,7 @@ int main() {
 	}
 	myfile << "AB1000 Completed\n";*/
 	
-	/*
+	
 	for (int i = 0; i < 1000; i++) {
 		GameControl mControl(AI_TYPE_A, AI_TYPE_A, "featuresA1000Self.txt", "featuresA1000Self.txt", false);
 		mControl.startGame();
@@ -132,7 +137,7 @@ int main() {
 		GameControl mControl(AI_TYPE_B, AI_TYPE_B, "featuresB1000Self.txt", "featuresB1000Self.txt", false);
 		mControl.startGame();
 	}
-	cout << "B1000 Completed\n";*/
+	cout << "B1000 Completed\n";
 	myfile.close();
 	getchar();
 	return 0;

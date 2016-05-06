@@ -18,6 +18,7 @@ GameBoard::GameBoard() {
 	points[0].initPoint(BLACK, 2);
 }
 
+// Copy constructor
 GameBoard::GameBoard(const GameBoard &old) {
 	whiteOnBar = old.whiteOnBar;
 	blackOnBar = old.blackOnBar;
@@ -40,7 +41,8 @@ bool GameBoard::isWhiteVictory() {
 	return whiteInHome == CHECKERS_PER_TEAM;
 }
 
-
+// Takes in an instruction to move a game piece. Return true if move was successful,
+// false otherwise
 bool GameBoard::movePiece(int color, int fromPoint, int toPoint) {
 	if (isMovePossible(color, fromPoint, toPoint)) {
 		if (!capturePiece(color, fromPoint, toPoint)) {
@@ -202,8 +204,7 @@ bool GameBoard::isHomeValid (int color) {
 }
 
 
-
-//TODO: getNumMoves
+// Deprecated function, not needed
 int GameBoard::getNumMoves(int color, int singleRoll) {
 	int i;
 	int sumOfMoves = 0;
@@ -236,6 +237,7 @@ int GameBoard::getNumMoves(int color, int singleRoll) {
 	return sumOfMoves;
 }
 
+// Returns a list of possible moves given whose turn it is and a dice roll.
 ftMoveList *GameBoard::getAllMoves(int color, int singleRoll, ftMoveList *moves) {
 	int i;
 	ftMoveList *tmpMove;
@@ -287,6 +289,8 @@ ftMoveList *GameBoard::getAllMoves(int color, int singleRoll, ftMoveList *moves)
 	return moves;
 }
 
+// Returns true if there is any avaiable move to make with the given dice roll,
+// false otherwise
 bool GameBoard::isThereAvailableMove(int color, int singleRoll) {
 	int i;
 	if (color == WHITE) {

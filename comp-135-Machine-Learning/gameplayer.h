@@ -1,3 +1,8 @@
+// Louis Ades
+// gameplayer.h
+// Purpose: Control how player chooses moves to make in game of
+//			backgammon. Can be a human or an AI using one of two feature sets.
+
 #pragma once
 
 #ifndef GAMEPLAYER_H
@@ -7,7 +12,7 @@
 #include <iostream>
 #include <stdio.h>
 
-#define L_RATE 0.0005
+#define L_RATE 0.0002
 #define LAMBDA 0.7
 
 #define HUMAN 0

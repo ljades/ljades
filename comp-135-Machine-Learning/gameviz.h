@@ -1,3 +1,7 @@
+// Louis Ades
+// gameviz.h
+// Purpose: Allows for a visual interface to play against AI player
+//			So you can see the current board states when need be.
 #pragma once
 
 #ifndef GAMEVIZ_H

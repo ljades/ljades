@@ -1,3 +1,9 @@
+// Louis Ades
+// gamecontrol.h
+// Purpose: Serve as a central control for a game of backgammon.
+//			Calls for players to make moves, changes the board accordingly,
+//			terminates when the game is over.
+
 #pragma once
 
 #ifndef GAMECONTROL_H
