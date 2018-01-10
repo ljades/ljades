@@ -26,6 +26,7 @@ For reference, a mapping of Challenge Day to relevant filenames:
 2. checksum
 3. spiral_memory
 4. passphrase
+5. trampoline
 6. memory
 7. recursive_circus
 8. registers

@@ -2,6 +2,39 @@
 
 from registers2 import RegisterStore
 
+class Duet(object):
+
+    program_0 = ''
+    program_1 = ''
+
+    def __init__(self, instructions_raw):
+        self.program_0 = RegisterStore(instructions_raw, 0)
+        print self.program_0
+        print self.program_0.registers
+        self.program_1 = RegisterStore(instructions_raw, 1)
+        print self.program_0.registers
+        print self.program_1.registers
+
+        self.program_0.set_paired_register_store(self.program_1)
+        self.program_1.set_paired_register_store(self.program_0)
+
+    def perform_duet(self):
+        is_deadlock = False
+
+        while not is_deadlock:
+            exit_val_0 = self.program_0.run_single()
+            exit_val_1 = self.program_1.run_single()
+
+            if not exit_val_0 or not exit_val_1:
+                print [exit_val_0, exit_val_1]
+
+            if (not exit_val_0) and (not exit_val_1):
+                is_deadlock = True
+        
+        return self.program_1.total_sent
+
+
+
 pset_input = """set i 31
 set a 1
 mul p 17
@@ -43,38 +76,6 @@ jgz i -11
 snd a
 jgz f -16
 jgz a -19"""
-
-class Duet(object):
-
-    program_0 = ''
-    program_1 = ''
-
-    def __init__(self, instructions_raw):
-        self.program_0 = RegisterStore(instructions_raw, 0)
-        print self.program_0
-        print self.program_0.registers
-        self.program_1 = RegisterStore(instructions_raw, 1)
-        print self.program_0.registers
-        print self.program_1.registers
-
-        self.program_0.set_paired_register_store(self.program_1)
-        self.program_1.set_paired_register_store(self.program_0)
-
-    def perform_duet(self):
-        is_deadlock = False
-
-        while not is_deadlock:
-            exit_val_0 = self.program_0.run_single()
-            exit_val_1 = self.program_1.run_single()
-
-            if not exit_val_0 or not exit_val_1:
-                print [exit_val_0, exit_val_1]
-
-            if (not exit_val_0) and (not exit_val_1):
-                is_deadlock = True
-        
-        return self.program_1.total_sent
-
 
 duet = Duet(pset_input)
 
