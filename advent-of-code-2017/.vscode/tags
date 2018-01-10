@@ -1,0 +1,108 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Checksum	../checksum.py	/^class Checksum(object):$/;"	kind:class	line:1
+HASH_SIZE	../knot_hash.py	/^HASH_SIZE = 256$/;"	kind:variable	line:1
+HexGrid	../hex_grid.py	/^class HexGrid(object):$/;"	kind:class	line:224
+InverseCaptcha	../inverse_captcha.py	/^class InverseCaptcha(object):$/;"	kind:class	line:1
+KnotHash	../knot_hash.py	/^class KnotHash(object):$/;"	kind:class	line:4
+MemoryBlocks	../memory.py	/^class MemoryBlocks(object):$/;"	kind:class	line:1
+Passphrase	../passphrase.py	/^class Passphrase(object):$/;"	kind:class	line:1
+REPEATS	../knot_hash.py	/^REPEATS = 64$/;"	kind:variable	line:2
+RecursiveCircus	../recursive_circus.py	/^class RecursiveCircus(object):$/;"	kind:class	line:1339
+RegisterStore	../registers.py	/^class RegisterStore(object):$/;"	kind:class	line:1004
+SECOND_TO_LAST	../spiral_memory.py	/^SECOND_TO_LAST = 265149$/;"	kind:variable	line:3
+SpiralMemory	../spiral_memory.py	/^class SpiralMemory(object):$/;"	kind:class	line:5
+StreamProcessor	../stream_processor.py	/^class StreamProcessor(object):$/;"	kind:class	line:97
+Trampoline	../trampoline.py	/^class Trampoline(object):$/;"	kind:class	line:1
+X	../hex_grid.py	/^X = 1$/;"	kind:variable	line:221
+Y	../hex_grid.py	/^Y = 0$/;"	kind:variable	line:222
+add_to_register	../registers.py	/^    def add_to_register(registers, register, val):$/;"	kind:member	line:1026
+banks_to_key	../memory.py	/^    def banks_to_key(self, banks):$/;"	kind:member	line:14
+buffer	../stream_processor.py	/^    buffer = 0$/;"	kind:variable	line:100
+calculate_square_bound	../spiral_memory.py	/^    def calculate_square_bound(self, num):$/;"	kind:member	line:28
+calculate_totals	../recursive_circus.py	/^    def calculate_totals(self, root):$/;"	kind:member	line:1381
+checksum.py	../checksum.py	1;"	kind:file	line:1
+cs	../checksum.py	/^cs = Checksum()$/;"	kind:variable	line:48
+dense_hash	../knot_hash.py	/^dense_hash = kh.get_hash_by_lengths(pset_input)$/;"	kind:variable	line:70
+destination_from_coords	../spiral_memory.py	/^    def destination_from_coords(self, coords):$/;"	kind:member	line:62
+directions	../hex_grid.py	/^    directions = {$/;"	kind:variable	line:225
+equal	../registers.py	/^    def equal(registers, register, val):$/;"	kind:member	line:1014
+even_quotient	../checksum.py	/^    def even_quotient(self, row):$/;"	kind:member	line:10
+find_root	../recursive_circus.py	/^    def find_root(self):$/;"	kind:member	line:1359
+fixed_wrong_weight_recursive	../recursive_circus.py	/^    def fixed_wrong_weight_recursive(self, root, deficit):$/;"	kind:member	line:1396
+garbage_count	../stream_processor.py	/^    garbage_count = 0$/;"	kind:variable	line:101
+get_fixed_wrong_weight	../recursive_circus.py	/^    def get_fixed_wrong_weight(self, program_list_raw):$/;"	kind:member	line:1389
+get_group_score_recursive	../stream_processor.py	/^    def get_group_score_recursive(self, score, depth):$/;"	kind:member	line:112
+get_hash_by_lengths	../knot_hash.py	/^    def get_hash_by_lengths(self, lengths):$/;"	kind:member	line:7
+get_max_register	../registers.py	/^    def get_max_register(self):$/;"	kind:member	line:1073
+get_num_steps	../hex_grid.py	/^    def get_num_steps(self, start, end):$/;"	kind:member	line:253
+get_steps_from_center	../hex_grid.py	/^    def get_steps_from_center(self, step_list):$/;"	kind:member	line:234
+get_total_score	../stream_processor.py	/^    def get_total_score(self, stream):$/;"	kind:member	line:105
+get_wrong_child_from_multiple	../recursive_circus.py	/^    def get_wrong_child_from_multiple(self, children_keys):$/;"	kind:member	line:1445
+greater_than	../registers.py	/^    def greater_than(registers, register, val):$/;"	kind:member	line:1008
+greater_than_or_equal	../registers.py	/^    def greater_than_or_equal(registers, register, val):$/;"	kind:member	line:1011
+hash	../knot_hash.py	/^    hash = []$/;"	kind:variable	line:5
+hex_grid.py	../hex_grid.py	1;"	kind:file	line:1
+hex_step	../hex_grid.py	/^    def hex_step(self, vector, step):$/;"	kind:member	line:295
+hex_string	../knot_hash.py	/^hex_string = ''$/;"	kind:variable	line:72
+hg	../hex_grid.py	/^hg = HexGrid()$/;"	kind:variable	line:307
+ic	../inverse_captcha.py	/^ic = InverseCaptcha()$/;"	kind:variable	line:12
+interpret_single_instruction	../registers.py	/^    def interpret_single_instruction(self, instruction):$/;"	kind:member	line:1051
+inverse_captcha.py	../inverse_captcha.py	1;"	kind:file	line:1
+is_valid_passphrase	../passphrase.py	/^    def is_valid_passphrase(self, phrase):$/;"	kind:member	line:11
+is_valid_passphrase_hard	../passphrase.py	/^    def is_valid_passphrase_hard(self, phrase):$/;"	kind:member	line:23
+kh	../knot_hash.py	/^kh = KnotHash()$/;"	kind:variable	line:68
+knot_hash.py	../knot_hash.py	1;"	kind:file	line:1
+largest_value_register	../registers.py	/^    def largest_value_register(self, instructions):$/;"	kind:member	line:1045
+less_than	../registers.py	/^    def less_than(registers, register, val):$/;"	kind:member	line:1023
+less_than_or_equal	../registers.py	/^    def less_than_or_equal(registers, register, val):$/;"	kind:member	line:1020
+manhattan_coords	../spiral_memory.py	/^    def manhattan_coords(self, destination):$/;"	kind:member	line:32
+manhattan_distance	../spiral_memory.py	/^    def manhattan_distance(self, root, destination):$/;"	kind:member	line:7
+math	../spiral_memory.py	/^import math$/;"	kind:namespace	line:1
+max_ever_held	../registers.py	/^    max_ever_held = 0$/;"	kind:variable	line:1006
+mb	../memory.py	/^mb = MemoryBlocks()$/;"	kind:variable	line:50
+memory.py	../memory.py	1;"	kind:file	line:1
+neighbor_spiral_fill	../spiral_memory.py	/^    def neighbor_spiral_fill(self, limit):$/;"	kind:member	line:96
+not_equal	../registers.py	/^    def not_equal(registers, register, val):$/;"	kind:member	line:1017
+num_jumps_in_series	../trampoline.py	/^    def num_jumps_in_series(self, jump_list):$/;"	kind:member	line:3
+num_redistribution_cycles	../memory.py	/^    def num_redistribution_cycles(self, banks):$/;"	kind:member	line:3
+num_valid_passphrases	../passphrase.py	/^    def num_valid_passphrases(self, phrases):$/;"	kind:member	line:3
+operators	../registers.py	/^    operators = {$/;"	kind:variable	line:1034
+parse_raw_direction	../hex_grid.py	/^    def parse_raw_direction(self, step):$/;"	kind:member	line:250
+passphrase.py	../passphrase.py	1;"	kind:file	line:1
+pp	../passphrase.py	/^pp = Passphrase()$/;"	kind:variable	line:554
+program_list	../recursive_circus.py	/^    program_list = {}$/;"	kind:variable	line:1340
+pset_input	../checksum.py	/^pset_input = pset_input.split('\\n')$/;"	kind:variable	line:42
+pset_input	../hex_grid.py	/^pset_input = pset_input.split(',')$/;"	kind:variable	line:305
+pset_input	../knot_hash.py	/^pset_input = list(pset_input)$/;"	kind:variable	line:61
+pset_input	../memory.py	/^pset_input = pset_input.split('\\t')$/;"	kind:variable	line:46
+pset_input	../passphrase.py	/^pset_input = pset_input.split('\\n')$/;"	kind:variable	line:552
+pset_input	../recursive_circus.py	/^pset_input = pset_input.split('\\n')$/;"	kind:variable	line:1478
+pset_input	../registers.py	/^pset_input = pset_input.split('\\n')$/;"	kind:variable	line:1002
+pset_input	../trampoline.py	/^pset_input = pset_input.split('\\n')$/;"	kind:variable	line:1117
+rc	../recursive_circus.py	/^rc = RecursiveCircus()$/;"	kind:variable	line:1480
+reallocate	../memory.py	/^    def reallocate(self, banks):$/;"	kind:member	line:21
+recursive_circus.py	../recursive_circus.py	1;"	kind:file	line:1
+reg	../registers.py	/^reg = RegisterStore()$/;"	kind:variable	line:1084
+registers	../registers.py	/^    registers = {}$/;"	kind:variable	line:1005
+registers.py	../registers.py	1;"	kind:file	line:1
+reverse_circular	../knot_hash.py	/^    def reverse_circular(self, start, end):$/;"	kind:member	line:29
+set_program_list	../recursive_circus.py	/^    def set_program_list(self, program_list_raw):$/;"	kind:member	line:1342
+sm	../spiral_memory.py	/^sm = SpiralMemory()$/;"	kind:variable	line:131
+sp	../stream_processor.py	/^sp = StreamProcessor()$/;"	kind:variable	line:144
+sparse_to_dense_hash	../knot_hash.py	/^    def sparse_to_dense_hash(self):$/;"	kind:member	line:46
+spiral	../spiral_memory.py	/^    spiral = []$/;"	kind:variable	line:94
+spiral_memory.py	../spiral_memory.py	1;"	kind:file	line:1
+stream	../stream_processor.py	/^    stream = ''$/;"	kind:variable	line:99
+stream_processor.py	../stream_processor.py	1;"	kind:file	line:1
+sub_to_register	../registers.py	/^    def sub_to_register(registers, register, val):$/;"	kind:member	line:1030
+sum_consecutives	../inverse_captcha.py	/^    def sum_consecutives(self, captcha):$/;"	kind:member	line:3
+sum_diffs	../checksum.py	/^    def sum_diffs(self, spreadsheet):$/;"	kind:member	line:3
+sum_of_neighbors	../spiral_memory.py	/^    def sum_of_neighbors(self, ind):$/;"	kind:member	line:108
+t	../trampoline.py	/^t = Trampoline()$/;"	kind:variable	line:1122
+track_garbage	../stream_processor.py	/^    def track_garbage(self):$/;"	kind:member	line:133
+trampoline.py	../trampoline.py	1;"	kind:file	line:1
