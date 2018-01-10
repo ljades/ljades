@@ -1,4 +1,4 @@
-## Louis Jack Ades's Personal Project Repository
+# Louis Jack Ades
 
 This repository includes personal projects, classwork, and exercise solutions for coding challenges I take.
 

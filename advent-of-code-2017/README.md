@@ -1,4 +1,4 @@
-## Advent of Code 2017 - Solutions
+## Advent of Code 2017
 
 This folder contains all of my work on the Advent of Code 2017 coding challenges. The original challenges can be found [here](https://adventofcode.com/2017).
 
