@@ -1,6 +1,8 @@
-Louis Jack Ades's Project Repo
+## Louis Jack Ades's Personal Project Repository
 
-Currently still a work in progress. As, I guess, it always should be!
+This repository includes personal projects, classwork, and exercise solutions for coding challenges I take.
+
+This is perpetually a work in progress as I share new coding exercises and projects whenever I can.
 
 Note: Most of the projects I worked on in my classes are not included
 in this repository as including answers in a public repository would be
