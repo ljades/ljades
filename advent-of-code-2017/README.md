@@ -41,3 +41,5 @@ For reference, a mapping of Challenge Day to relevant filenames:
 17. spinlock
 18. duet, registers2
 19. tubular
+20. particle_swarm
+21. enhancer
